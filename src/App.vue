@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ImageUploader />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ImageUploader from './components/ImageUploader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ImageUploader
   }
 }
 </script>
@@ -23,6 +22,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  border-radius: 8px;
+  background: #50717b;
+}
+
+body {
+  background: #212121;
 }
 </style>
